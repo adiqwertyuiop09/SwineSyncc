@@ -64,6 +64,12 @@
     <Compile Include="NavigationPanel.Designer.cs">
       <DependentUpon>NavigationPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="PigManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PigManagement.Designer.cs">
+      <DependentUpon>PigManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Dashboard.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NavigationPanel.resx">
       <DependentUpon>NavigationPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PigManagement.resx">
+      <DependentUpon>PigManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

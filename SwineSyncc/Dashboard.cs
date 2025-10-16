@@ -18,7 +18,8 @@ namespace SwineSyncc
             InitializeComponent();
             navigationPanel = new NavigationPanel();
             navigationPanel.Dock = DockStyle.Fill;
-            navPanel.Controls.Add(navigationPanel); 
+            navPanel.Controls.Add(navigationPanel);
+           
 
         }
 
@@ -26,5 +27,7 @@ namespace SwineSyncc
         {
 
         }
+
+        
     }
 }

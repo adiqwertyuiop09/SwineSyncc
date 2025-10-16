@@ -46,7 +46,6 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.button3);
             this.flowLayoutPanel1.Controls.Add(this.pigManagementBtn);
             this.flowLayoutPanel1.Controls.Add(this.panelPigSubMenu);
@@ -55,10 +54,11 @@
             this.flowLayoutPanel1.Controls.Add(this.button8);
             this.flowLayoutPanel1.Controls.Add(this.button9);
             this.flowLayoutPanel1.Controls.Add(this.button10);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(305, 672);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(385, 817);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.WrapContents = false;
             // 
@@ -66,7 +66,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(3, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(302, 103);
+            this.button3.Size = new System.Drawing.Size(364, 103);
             this.button3.TabIndex = 4;
             this.button3.Text = "FOR LOGO(PALITAN PICTUREBOX)";
             this.button3.UseVisualStyleBackColor = true;
@@ -75,7 +75,7 @@
             // 
             this.pigManagementBtn.Location = new System.Drawing.Point(3, 112);
             this.pigManagementBtn.Name = "pigManagementBtn";
-            this.pigManagementBtn.Size = new System.Drawing.Size(302, 103);
+            this.pigManagementBtn.Size = new System.Drawing.Size(364, 103);
             this.pigManagementBtn.TabIndex = 2;
             this.pigManagementBtn.Text = "Pig management";
             this.pigManagementBtn.UseVisualStyleBackColor = true;
@@ -91,7 +91,7 @@
             this.panelPigSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPigSubMenu.Location = new System.Drawing.Point(3, 221);
             this.panelPigSubMenu.Name = "panelPigSubMenu";
-            this.panelPigSubMenu.Size = new System.Drawing.Size(302, 244);
+            this.panelPigSubMenu.Size = new System.Drawing.Size(367, 244);
             this.panelPigSubMenu.TabIndex = 5;
             this.panelPigSubMenu.Visible = false;
             // 
@@ -99,7 +99,7 @@
             // 
             this.button5.Location = new System.Drawing.Point(81, 164);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(218, 77);
+            this.button5.Size = new System.Drawing.Size(283, 77);
             this.button5.TabIndex = 8;
             this.button5.Text = "Health records";
             this.button5.UseVisualStyleBackColor = true;
@@ -108,7 +108,7 @@
             // 
             this.button4.Location = new System.Drawing.Point(81, 83);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(218, 77);
+            this.button4.Size = new System.Drawing.Size(283, 77);
             this.button4.TabIndex = 7;
             this.button4.Text = "Pregnancy records";
             this.button4.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(81, 0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(218, 77);
+            this.button2.Size = new System.Drawing.Size(283, 77);
             this.button2.TabIndex = 6;
             this.button2.Text = "Breeding records";
             this.button2.UseVisualStyleBackColor = true;
@@ -126,7 +126,7 @@
             // 
             this.button6.Location = new System.Drawing.Point(3, 471);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(302, 103);
+            this.button6.Size = new System.Drawing.Size(364, 103);
             this.button6.TabIndex = 6;
             this.button6.Text = "Inventory";
             this.button6.UseVisualStyleBackColor = true;
@@ -135,7 +135,7 @@
             // 
             this.button7.Location = new System.Drawing.Point(3, 580);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(302, 103);
+            this.button7.Size = new System.Drawing.Size(364, 103);
             this.button7.TabIndex = 7;
             this.button7.Text = "Transactions";
             this.button7.UseVisualStyleBackColor = true;
@@ -144,7 +144,7 @@
             // 
             this.button8.Location = new System.Drawing.Point(3, 689);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(302, 103);
+            this.button8.Size = new System.Drawing.Size(364, 103);
             this.button8.TabIndex = 8;
             this.button8.Text = "Analytics";
             this.button8.UseVisualStyleBackColor = true;
@@ -153,7 +153,7 @@
             // 
             this.button9.Location = new System.Drawing.Point(3, 798);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(302, 103);
+            this.button9.Size = new System.Drawing.Size(364, 103);
             this.button9.TabIndex = 9;
             this.button9.Text = "User management";
             this.button9.UseVisualStyleBackColor = true;
@@ -162,7 +162,7 @@
             // 
             this.button10.Location = new System.Drawing.Point(3, 907);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(302, 103);
+            this.button10.Size = new System.Drawing.Size(364, 103);
             this.button10.TabIndex = 10;
             this.button10.Text = "Reminders";
             this.button10.UseVisualStyleBackColor = true;
@@ -173,7 +173,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "NavigationPanel";
-            this.Size = new System.Drawing.Size(385, 673);
+            this.Size = new System.Drawing.Size(385, 817);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.panelPigSubMenu.ResumeLayout(false);
