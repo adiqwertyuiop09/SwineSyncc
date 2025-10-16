@@ -28,25 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            // navPanel
             this.navPanel = new System.Windows.Forms.Panel();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // navPanel
+            // 
+            this.navPanel.BackColor = System.Drawing.Color.LightGray;
             this.navPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.navPanel.Location = new System.Drawing.Point(0, 0);
             this.navPanel.Name = "navPanel";
-            this.navPanel.Size = new System.Drawing.Size(280, 673); 
+            this.navPanel.Size = new System.Drawing.Size(280, 673);
             this.navPanel.TabIndex = 0;
-            this.navPanel.BackColor = System.Drawing.Color.LightGray; 
-
+            // 
             // mainPanel
-            this.mainPanel = new System.Windows.Forms.Panel();
+            // 
+            this.mainPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(280, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(982, 673);
             this.mainPanel.TabIndex = 1;
-            this.mainPanel.BackColor = System.Drawing.Color.WhiteSmoke; 
-
+            // 
             // Dashboard
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
@@ -56,7 +61,6 @@
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
-
 
         }
 

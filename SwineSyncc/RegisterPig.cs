@@ -15,6 +15,17 @@ namespace SwineSyncc
         public RegisterPig()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;      
+        }
+
+        private void RegisterPig_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
