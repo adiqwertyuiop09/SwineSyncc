@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SwineSyncc
 {
-    public partial class NavigationPanel : UserControl
+    public partial class RegisterPig : UserControl
     {
-        public NavigationPanel()
+        public RegisterPig()
         {
             InitializeComponent();
-        }
-
-        private void pigManagementBtn_Click(object sender, EventArgs e)
-        {
-            panelPigSubMenu.Visible = !panelPigSubMenu.Visible;           
         }
     }
 }

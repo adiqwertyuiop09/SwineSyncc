@@ -12,9 +12,16 @@ namespace SwineSyncc
 {
     public partial class PigManagement : UserControl
     {
+        public event EventHandler RegisterPigClicked;
+
         public PigManagement()
         {
             InitializeComponent();
+        }
+
+        private void btnRegisterPig_Click(object sender, EventArgs e)
+        {
+            RegisterPigClicked?.Invoke(this, EventArgs.Empty);           
         }
     }
 }

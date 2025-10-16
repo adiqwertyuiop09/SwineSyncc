@@ -184,7 +184,7 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button pigManagementBtn;
+        public System.Windows.Forms.Button pigManagementBtn;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panelPigSubMenu;
         private System.Windows.Forms.Button button5;

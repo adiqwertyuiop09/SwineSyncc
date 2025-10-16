@@ -15,13 +15,28 @@ namespace SwineSyncc
         private NavigationPanel navigationPanel;
         public Dashboard()
         {
-            InitializeComponent();
+            InitializeComponent();           
             navigationPanel = new NavigationPanel();
-            navigationPanel.Dock = DockStyle.Fill;
             navPanel.Controls.Add(navigationPanel);
-           
 
+            navigationPanel.pigManagementBtn.Click += (s, e) => LoadPigManagement();
+            
         }
+      
+        private void ShowUserControl(UserControl uc)
+        {        
+            mainPanel.Controls.Clear();
+            uc.Dock = DockStyle.Fill;
+            mainPanel.Controls.Add(uc);
+        }
+
+        private void LoadPigManagement()
+        {
+            PigManagement pigUC = new PigManagement();
+            pigUC.RegisterPigClicked += (s, e) => ShowUserControl(new RegisterPig());
+            ShowUserControl(pigUC);
+        }
+
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
