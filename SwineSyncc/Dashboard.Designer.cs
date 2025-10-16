@@ -38,16 +38,16 @@
             this.navPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.navPanel.Location = new System.Drawing.Point(0, 0);
             this.navPanel.Name = "navPanel";
-            this.navPanel.Size = new System.Drawing.Size(280, 673);
+            this.navPanel.Size = new System.Drawing.Size(369, 673);
             this.navPanel.TabIndex = 0;
             // 
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(280, 0);
+            this.mainPanel.Location = new System.Drawing.Point(369, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(982, 673);
+            this.mainPanel.Size = new System.Drawing.Size(893, 673);
             this.mainPanel.TabIndex = 1;
             // 
             // Dashboard
