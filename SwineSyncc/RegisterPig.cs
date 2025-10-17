@@ -13,98 +13,47 @@ namespace SwineSyncc
 {
     public partial class RegisterPig : UserControl
     {
-        private readonly Color AccentColor = Color.FromArgb(88, 72, 60);
-        private readonly Color BackgroundColor = Color.FromArgb(221, 223, 222);
-        private readonly Font HeaderFont = new Font("Source Sans 3", 24, FontStyle.Bold);
-        private readonly Font LabelFont = new Font("Source Sans 3", 14, FontStyle.Bold);
-        private readonly Font RadioFont = new Font("Source Sans 3", 9, FontStyle.Bold);
-
-        [System.Runtime.InteropServices.DllImport("gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn(
-            int nLeftRect,
-            int nTopRect,
-            int nRightRect,
-            int nBottomRect,
-            int nWidthEllipse,
-            int nHeightEllipse
-        );
-
         public RegisterPig()
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+            this.BackColor = Color.WhiteSmoke;
 
-            this.BackColor = Color.WhiteSmoke; 
+            panel1.BackColor = Color.FromArgb(217, 221, 220);
 
-            panel1.BackColor = Color.FromArgb(217, 221, 220); 
             ApplyTheme();
-            StyleButtons();
+            ApplyButtonStyles();
         }
 
         private void ApplyTheme()
-        {
-          
+        {           
             this.BackColor = Color.White;
-           
-            registerpiglbl.ForeColor = AccentColor;
-            registerpiglbl.Font = HeaderFont;
-           
+
+            registerpiglbl.ForeColor = UIStyle.AccentColor;
+            registerpiglbl.Font = UIStyle.HeaderFont;
+
             foreach (var label in new[] { tagnumberlbl, birthdatelbl, breedlbl, weightlbl, sexlbl, statuslbl })
             {
-                label.ForeColor = AccentColor;
-                label.Font = LabelFont;
+                label.ForeColor = UIStyle.AccentColor;
+                label.Font = UIStyle.LabelFont;
             }
 
             foreach (var radio in new[] { maleradiobtn, femaleradiobtn })
             {
-                radio.ForeColor = AccentColor;
-                radio.Font = RadioFont;
+                radio.ForeColor = UIStyle.AccentColor;
+                radio.Font = UIStyle.RadioFont;
             }
         }
-        private void StyleButtons()
-        {
-            Color brown = AccentColor;
-            Color bg = BackgroundColor;
-            Font buttonFont = new Font("Source Sans 3", 14, FontStyle.Bold);
 
-            // --- Save Button (filled brown) ---
-            savebtn.FlatStyle = FlatStyle.Flat;
-            savebtn.FlatAppearance.BorderSize = 0;
-            savebtn.BackColor = brown;
-            savebtn.ForeColor = bg;
-            savebtn.Font = buttonFont;
-            savebtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, savebtn.Width, savebtn.Height, 9, 9));
-
-            // --- Clear Button (white, no border) ---
-            clearbtn.FlatStyle = FlatStyle.Flat;
-            clearbtn.FlatAppearance.BorderSize = 0;
-            clearbtn.BackColor = Color.White;
-            clearbtn.ForeColor = brown;
-            clearbtn.Font = buttonFont;
-            clearbtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, clearbtn.Width, clearbtn.Height, 9, 9));
-
-            // --- Cancel Button (white, no border) ---
-            cancelbtn.FlatStyle = FlatStyle.Flat;
-            cancelbtn.FlatAppearance.BorderSize = 0;
-            cancelbtn.BackColor = Color.White;
-            cancelbtn.ForeColor = brown;
-            cancelbtn.Font = buttonFont;
-            cancelbtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, cancelbtn.Width, cancelbtn.Height, 9, 9));
-
-            // --- Hover Effects ---
-            savebtn.MouseEnter += (s, e) => savebtn.BackColor = Color.FromArgb(70, 55, 45);
-            savebtn.MouseLeave += (s, e) => savebtn.BackColor = brown;
-
-            clearbtn.MouseEnter += (s, e) => clearbtn.BackColor = Color.FromArgb(245, 245, 245);
-            clearbtn.MouseLeave += (s, e) => clearbtn.BackColor = Color.White;
-
-            cancelbtn.MouseEnter += (s, e) => cancelbtn.BackColor = Color.FromArgb(245, 245, 245);
-            cancelbtn.MouseLeave += (s, e) => cancelbtn.BackColor = Color.White;
+        private void ApplyButtonStyles()
+        {            
+            UIStyle.StyleFilledButton(savebtn);
+            UIStyle.StyleOutlineButton(clearbtn);
+            UIStyle.StyleOutlineButton(cancelbtn);
         }
 
         private void RegisterPig_Load(object sender, EventArgs e)
         {
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -122,7 +71,5 @@ namespace SwineSyncc
 
             panel1.Region = new Region(path);
         }
-
-        
     }
 }
