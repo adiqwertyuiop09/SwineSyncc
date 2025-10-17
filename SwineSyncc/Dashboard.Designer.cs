@@ -40,6 +40,7 @@
             this.navPanel.Name = "navPanel";
             this.navPanel.Size = new System.Drawing.Size(369, 673);
             this.navPanel.TabIndex = 0;
+            this.navPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.navPanel_Paint);
             // 
             // mainPanel
             // 

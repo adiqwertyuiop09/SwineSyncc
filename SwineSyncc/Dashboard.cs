@@ -43,6 +43,9 @@ namespace SwineSyncc
 
         }
 
-        
+        private void navPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
