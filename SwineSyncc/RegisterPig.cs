@@ -73,7 +73,7 @@ namespace SwineSyncc
             savebtn.BackColor = brown;
             savebtn.ForeColor = bg;
             savebtn.Font = buttonFont;
-            savebtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, savebtn.Width, savebtn.Height, 20, 20));
+            savebtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, savebtn.Width, savebtn.Height, 9, 9));
 
             // --- Clear Button (white, no border) ---
             clearbtn.FlatStyle = FlatStyle.Flat;
@@ -81,7 +81,7 @@ namespace SwineSyncc
             clearbtn.BackColor = Color.White;
             clearbtn.ForeColor = brown;
             clearbtn.Font = buttonFont;
-            clearbtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, clearbtn.Width, clearbtn.Height, 20, 20));
+            clearbtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, clearbtn.Width, clearbtn.Height, 9, 9));
 
             // --- Cancel Button (white, no border) ---
             cancelbtn.FlatStyle = FlatStyle.Flat;
@@ -89,7 +89,7 @@ namespace SwineSyncc
             cancelbtn.BackColor = Color.White;
             cancelbtn.ForeColor = brown;
             cancelbtn.Font = buttonFont;
-            cancelbtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, cancelbtn.Width, cancelbtn.Height, 20, 20));
+            cancelbtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, cancelbtn.Width, cancelbtn.Height, 9, 9));
 
             // --- Hover Effects ---
             savebtn.MouseEnter += (s, e) => savebtn.BackColor = Color.FromArgb(70, 55, 45);
