@@ -13,6 +13,7 @@ namespace SwineSyncc
 {
     public partial class RegisterPig : UserControl
     {
+        public event EventHandler CancelClicked;
         public RegisterPig()
         {
             InitializeComponent();
@@ -42,7 +43,7 @@ namespace SwineSyncc
             {
                 radio.ForeColor = UIStyle.AccentColor;
                 radio.Font = UIStyle.RadioFont;
-            }
+            }           
         }
 
         private void ApplyButtonStyles()
@@ -54,6 +55,7 @@ namespace SwineSyncc
 
         private void RegisterPig_Load(object sender, EventArgs e)
         {
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -70,6 +72,11 @@ namespace SwineSyncc
             path.CloseAllFigures();
 
             panel1.Region = new Region(path);
+        }
+
+        private void cancelbtn_Click(object sender, EventArgs e)
+        {
+            CancelClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

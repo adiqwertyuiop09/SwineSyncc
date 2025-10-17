@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cancelbtn = new System.Windows.Forms.Button();
+            this.clearbtn = new System.Windows.Forms.Button();
+            this.savebtn = new System.Windows.Forms.Button();
             this.registerpiglbl = new System.Windows.Forms.Label();
             this.statuslbl = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -45,9 +48,6 @@
             this.breedlbl = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tagnumberlbl = new System.Windows.Forms.Label();
-            this.savebtn = new System.Windows.Forms.Button();
-            this.clearbtn = new System.Windows.Forms.Button();
-            this.cancelbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +76,34 @@
             this.panel1.Size = new System.Drawing.Size(1135, 733);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // cancelbtn
+            // 
+            this.cancelbtn.Location = new System.Drawing.Point(848, 612);
+            this.cancelbtn.Name = "cancelbtn";
+            this.cancelbtn.Size = new System.Drawing.Size(155, 62);
+            this.cancelbtn.TabIndex = 32;
+            this.cancelbtn.Text = "Cancel";
+            this.cancelbtn.UseVisualStyleBackColor = true;
+            this.cancelbtn.Click += new System.EventHandler(this.cancelbtn_Click);
+            // 
+            // clearbtn
+            // 
+            this.clearbtn.Location = new System.Drawing.Point(644, 612);
+            this.clearbtn.Name = "clearbtn";
+            this.clearbtn.Size = new System.Drawing.Size(155, 62);
+            this.clearbtn.TabIndex = 31;
+            this.clearbtn.Text = "Clear";
+            this.clearbtn.UseVisualStyleBackColor = true;
+            // 
+            // savebtn
+            // 
+            this.savebtn.Location = new System.Drawing.Point(439, 612);
+            this.savebtn.Name = "savebtn";
+            this.savebtn.Size = new System.Drawing.Size(165, 62);
+            this.savebtn.TabIndex = 30;
+            this.savebtn.Text = "Save";
+            this.savebtn.UseVisualStyleBackColor = true;
             // 
             // registerpiglbl
             // 
@@ -205,33 +233,6 @@
             this.tagnumberlbl.Size = new System.Drawing.Size(135, 25);
             this.tagnumberlbl.TabIndex = 16;
             this.tagnumberlbl.Text = "Tag number:";
-            // 
-            // savebtn
-            // 
-            this.savebtn.Location = new System.Drawing.Point(439, 612);
-            this.savebtn.Name = "savebtn";
-            this.savebtn.Size = new System.Drawing.Size(165, 62);
-            this.savebtn.TabIndex = 30;
-            this.savebtn.Text = "Save";
-            this.savebtn.UseVisualStyleBackColor = true;
-            // 
-            // clearbtn
-            // 
-            this.clearbtn.Location = new System.Drawing.Point(644, 612);
-            this.clearbtn.Name = "clearbtn";
-            this.clearbtn.Size = new System.Drawing.Size(155, 62);
-            this.clearbtn.TabIndex = 31;
-            this.clearbtn.Text = "Clear";
-            this.clearbtn.UseVisualStyleBackColor = true;
-            // 
-            // cancelbtn
-            // 
-            this.cancelbtn.Location = new System.Drawing.Point(848, 612);
-            this.cancelbtn.Name = "cancelbtn";
-            this.cancelbtn.Size = new System.Drawing.Size(155, 62);
-            this.cancelbtn.TabIndex = 32;
-            this.cancelbtn.Text = "Cancel";
-            this.cancelbtn.UseVisualStyleBackColor = true;
             // 
             // RegisterPig
             // 
